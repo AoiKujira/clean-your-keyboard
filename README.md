@@ -11,3 +11,4 @@ u_ids=(10 12 11 13 14 6 7 8 9)
 
 Now run `suspension.sh` to disable your things for 30 seconds.
 
+There is also a scary way of doing this which does not require to extract ids manually. You can run `scary_suspension.sh` for that.
