@@ -26,15 +26,8 @@ for u_id in "${u_ids[@]}"; do
     xinput disable "$u_id"
 done
 
-seconds=30
 # start timer
-while [ $seconds -gt 0 ]; do
-    echo "Remaining time: $seconds seconds"
-    sleep 1
-    (( seconds-- ))
-done
-
-echo "Time's up!"
+./timer.sh 30
 
 # Iterate over the IDs and enable them
 for u_id in "${u_ids[@]}"; do
